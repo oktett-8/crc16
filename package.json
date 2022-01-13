@@ -1,0 +1,26 @@
+{
+    "name"          : "node-red-contrib-qmaker-crc16",
+    "version"       : "1.0.0",
+    "description"   : "A Node-RED node to convert crc16 modbus rtu",
+    "dependencies"  : {
+    },
+    "repository" : {
+        "type":"git",
+        "url":"https://github.com/QMaker7527/crc16.git"
+    },
+    "license": "Apache-2.0",
+    "keywords": [ "node-red", "qmaker", "crc16", "modbus", "rtu", "serial" ],
+    "node-red"      : {
+        "nodes"     : {
+            "crc16-modbus": "crc16-modbus.js"
+        }
+    },
+    "author": {
+        "name": "QMaker Nakarin Audsri",
+        "email": "qmaker7527@gmail.com",
+        "url": "http://nodered.org"
+    },
+    "contributors": [
+        { "name": "@QMaker" }
+    ]
+}

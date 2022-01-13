@@ -1,0 +1,24 @@
+<script type="text/javascript">
+    RED.nodes.registerType('crc16-modbus',{
+        category: 'crc',
+        color: '#fdbe02',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "sun.png",
+        label: function() {
+            return this.name||"crc16-modbus";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="crc16-modbus">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-tips" id="node-crc16-modbus-tip"><span data-i18n="crc16-modbus.label.tip"></span></div>
+</script>
+
