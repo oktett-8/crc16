@@ -77,9 +77,8 @@ module.exports = function(RED) {
         Calculate: function(str, inputType) {
             this.StringToCheck = str;
             if (this.CleanString(inputType)) {
-                crcinputcrc16modbus=this.CRC16Modbus().toString(16).toUpperCase();
+                crcinputcrc16modbus=this.CRC16Modbus().toString(16).toUpperCase().padStart(4, "0");
                 crcinputcrc16modbus=crcinputcrc16modbus.substr(2) + crcinputcrc16modbus.substr(0, 2); //swap bytes
-       
             }
         }
     };
